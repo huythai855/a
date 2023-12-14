@@ -5,82 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        #quiz-container {
-            max-width: 600px;
-            margin: auto;
-        }
-        #question {
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .answer {
-            margin-bottom: 10px;
-            cursor: pointer;
-        }
-        .answer:hover {
-            background-color: #f0f0f0;
-        }
-        .selected {
-            background-color: #e0e0e0;
-        }
-        
-        .color-change-label {
-            color: red; /* Màu mặc định của label */
-        }
-    </style>
-</head>
-<body>
-
-    <label class="HangMoi" id="cauHoi">Chưa có câu hỏi</label>
-        
-        <br>
-        <label class="radio-container">
-            <input type="radio" id="ans0" name="gioitinh" checked="checked"> <span id="text0">Câu trả lời 1</span>
-            <span class="checkmark"></span>
-            <span class="checkmark2"></span>
-        </label>
-
-        <br>
-        <label class="radio-container">
-            <input type="radio" id="ans1" name="gioitinh" checked="checked"> <span id="text1">Câu trả lời 2</span>
-            <span class="checkmark"></span>
-            <span class="checkmark2"></span>
-        </label>
-
-        <br>
-        <label class="radio-container">
-            <input type="radio" id="ans2" name="gioitinh" checked="checked"> <span id="text2">Câu trả lời 3</span>
-            <span class="checkmark"></span>
-            <span class="checkmark2"></span>
-        </label>
-
-        <br>
-        <label class="radio-container">
-            <input type="radio" id="ans3" name="gioitinh" checked="checked"> <span id="text3">Câu trả lời 4</span>
-            <span class="checkmark"></span>
-            <span class="checkmark2"></span>
-        </label>
-        <br>
-
-        <br>
-        <br>
-        
-        <label id="ketQua" ></label>
-        <br>
-    
-        <br>
-        <button onclick="kiemTra()">Kiểm tra</button>
-        <br>
-        <button onclick="cauTiep()">Câu tiếp</button>
-        
-
-        
-
-<script>
+    <script>
     var correct1 = "";
 
     function shuffleArray(array) {
@@ -197,6 +122,78 @@
 
 
 </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #quiz-container {
+            max-width: 600px;
+            margin: auto;
+        }
+        #question {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .answer {
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .answer:hover {
+            background-color: #f0f0f0;
+        }
+        .selected {
+            background-color: #e0e0e0;
+        }
+        
+        .color-change-label {
+            color: red; /* Màu mặc định của label */
+        }
+    </style>
+</head>
+<body>
+
+    <label class="HangMoi" id="cauHoi">Chưa có câu hỏi</label>
+        
+        <br>
+        <label class="radio-container">
+            <input type="radio" id="ans0" name="gioitinh" checked="checked"> <span id="text0">Câu trả lời 1</span>
+            <span class="checkmark"></span>
+            <span class="checkmark2"></span>
+        </label>
+
+        <br>
+        <label class="radio-container">
+            <input type="radio" id="ans1" name="gioitinh" checked="checked"> <span id="text1">Câu trả lời 2</span>
+            <span class="checkmark"></span>
+            <span class="checkmark2"></span>
+        </label>
+
+        <br>
+        <label class="radio-container">
+            <input type="radio" id="ans2" name="gioitinh" checked="checked"> <span id="text2">Câu trả lời 3</span>
+            <span class="checkmark"></span>
+            <span class="checkmark2"></span>
+        </label>
+
+        <br>
+        <label class="radio-container">
+            <input type="radio" id="ans3" name="gioitinh" checked="checked"> <span id="text3">Câu trả lời 4</span>
+            <span class="checkmark"></span>
+            <span class="checkmark2"></span>
+        </label>
+        <br>
+
+        <br>
+        <br>
+        
+        <label id="ketQua" ></label>
+        <br>
+    
+        <br>
+        <button onclick="kiemTra()">Kiểm tra</button>
+        <br>
+        <button onclick="cauTiep()">Câu tiếp</button>
+    
 
 </body>
 </html>
